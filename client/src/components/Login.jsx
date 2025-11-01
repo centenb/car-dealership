@@ -24,7 +24,6 @@ export const Login = () => {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(body)
         };
-        //const response = await fetch('http://localhost:5000/employees/login', requestOptions);
         const response = await fetch(`${API_BASE_URL}/employees/login`, requestOptions);
         const data = await response.json();
 

@@ -8,7 +8,11 @@ export default defineConfig({
   optimizeDeps: {},
   define: {
     'globals.environment': JSON.stringify(process.env.NODE_ENV)
-  }
+  },
+  build: {
+        outDir: 'C:\Users\BENHOME\Documents\.vs\production\car-dealership\server',
+        emptyOutDir: true,
+      },
 })
 
 
