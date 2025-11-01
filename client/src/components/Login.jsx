@@ -12,7 +12,7 @@ export const Login = () => {
 
         try
         {
-        const API_BASE_URL = globals.environment === 'production' ? '' : 'http://localhost:5000'
+        const API_BASE_URL = globals.environment === 'production' ? '' : 'http://localhost:5000';
 
         const body = {
             username: username,
