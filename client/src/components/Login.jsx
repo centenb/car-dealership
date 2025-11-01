@@ -12,6 +12,8 @@ export const Login = () => {
 
         try
         {
+        const API_BASE_URL = globals.environment === 'production' ? '' : 'http://localhost:5000'
+
         const body = {
             username: username,
             password: password
@@ -23,9 +25,8 @@ export const Login = () => {
         body: JSON.stringify(body)
         };
         //const response = await fetch('http://localhost:5000/employees/login', requestOptions);
-        const response = await fetch('https://car-dealership-n25l.onrender.com/employees/login', requestOptions);
+        const response = await fetch(`${API_BASE_URL}/employees/login`, requestOptions);
         const data = await response.json();
-        
 
         const element = document.querySelector('.loginResult');
         if(data.message === "Login successful") {
