@@ -6,8 +6,8 @@ export const Navbar = () => {
     <div className="flex justify-between p-4">
       Navbar
         <div>
-            <Link to="/home">Home</Link>
-            <Link to="/">Login</Link>
+            <Link to="/">Home</Link>
+            <Link to="/login">Login</Link>
         </div>
     </div>
   )
