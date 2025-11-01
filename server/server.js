@@ -16,7 +16,7 @@ app.use("/employees", employees);
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(process.cwd(), 'dist')))
 }
-
+console.log(JSON.stringify(process.env, null, 2));
 app.listen(5000, () => {
     console.log("Express server has started on port 5000")
 })
