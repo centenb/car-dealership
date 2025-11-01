@@ -5,7 +5,7 @@ import dotenv from 'dotenv';
 import path from 'path';
 import morgan from 'morgan';
 dotenv.config();
-app.use(morgan('tiny'))
+app.use(morgan('tiny'));
 
 const app = express();
 
