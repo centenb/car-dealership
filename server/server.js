@@ -4,6 +4,8 @@ import employees from './routes/employee.js';
 import dotenv from 'dotenv';
 import path from 'path';
 dotenv.config();
+const morgan = require('morgan')
+app.use(morgan('tiny'))
 
 const app = express();
 
