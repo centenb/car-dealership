@@ -2,6 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import employees from './routes/employee.js';
 import dotenv from 'dotenv';
+import path from 'path';
 dotenv.config();
 
 const app = express();
