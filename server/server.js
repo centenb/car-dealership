@@ -3,8 +3,8 @@ import cors from 'cors';
 import employees from './routes/employee.js';
 import dotenv from 'dotenv';
 import path from 'path';
+import morgan from 'morgan';
 dotenv.config();
-const morgan = require('morgan')
 app.use(morgan('tiny'))
 
 const app = express();
