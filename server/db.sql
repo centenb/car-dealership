@@ -1,7 +1,13 @@
 CREATE DATABASE cardealership;
 
 CREATE TABLE car(
-  todo_id SERIAL PRIMARY KEY,
+  car_id SERIAL PRIMARY KEY,
+  make VARCHAR(255),
+  model VARCHAR(255),
+  year INT,
+  km INT,
+  price INT,
+  image_url VARCHAR(255),
   description VARCHAR(255)
 );
 
